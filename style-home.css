@@ -1,0 +1,162 @@
+/*Global style started*/
+
+body{
+    background-image: url(codinghands.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+nav{
+    padding: 18px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(1, 40, 140, 0.4);
+    box-shadow:0 0 30px rgba(0 ,0 ,0 ,0.4);
+}
+
+nav a{
+    margin: 30px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    text-shadow:0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff;
+}
+
+p{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.home-page{
+    color: #922649;
+    text-shadow:0 0 10px #922649,
+                0 0 20px #922649,
+                0 0 40px #922649;
+}
+
+.home-page:hover{
+    color: #ff5a8e;
+    text-shadow:0 0 10px #ff5a8e,
+                0 0 20px #ff5a8e,
+                0 0 40px #ff5a8e;
+}
+
+.title{
+    font-size: 58px;
+    margin-top: 86px;
+}
+
+.sub-title{
+    font-size: 25px;
+}
+
+.blur-box{
+    background-color: rgba(1, 40, 140, 0.4);
+    box-shadow:0 0 30px rgba(0 ,0 ,0 ,0.4);
+    transition: 1s ease-in-out;
+}
+
+.blur-box:hover{
+    box-shadow:0 0 10px rgb(1, 40, 140);
+}
+
+footer{
+    position: fixed;
+    right: 30%;
+    left: 30%;
+    bottom: 20px;
+}
+
+footer a{
+    margin: 8px 15px;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+footer a img:hover{
+    width: 40px;
+    height: 40px;
+    transform: translate(0%, -20%);
+}
+
+/*Global style ended*/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.blur-box-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.inner-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Global style started for mobile*/
+@media screen and (max-width: 600px) {
+    footer{
+        position: static;
+          }
+    nav{
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+       }
+  }    
+/*Global style ended for mobile*/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+.blur-box-inner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inner-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu{
+      width: 60%;
+        }
+}  
